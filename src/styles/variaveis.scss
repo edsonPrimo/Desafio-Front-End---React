@@ -1,0 +1,30 @@
+$branco: #ffffff;
+$branco64: rgba(255, 255, 255, 0.64);
+$cinza08: rgba(255, 255, 255, 0.08);
+$cinza016: rgba(255, 255, 255, 0.16);
+$cinza024: rgba(255, 255, 255, 0.24);
+$cinza036: rgba(255, 255, 255, 0.36);
+$cinza-claro: #eaeaeb;
+$preto:#141414;
+$azul-input: rgba(80, 129, 251, 0.08);
+$azul-background:#051d3b;
+$azul:#5081FB;
+$azul-claro:#7BA4FC;
+$azul-bebe:#7BA4FC;
+
+*{
+  input:focus, textarea:focus, select:focus, code:focus{
+      outline: none;    
+  }
+}
+
+@mixin for-tablet {
+  @media screen and (max-width:1023.98px){
+      @content;
+  }    
+}
+@mixin for-phone {
+  @media screen and (max-width:599.98px) {
+      @content;
+  }
+}

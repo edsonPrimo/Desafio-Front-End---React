@@ -1,0 +1,15 @@
+.botao {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: $azul;
+  transition: 0.35s ;
+  &:hover{
+      background: $azul-claro;
+  }
+  &:active{
+      border: 4px solid $azul;
+  }
+
+}

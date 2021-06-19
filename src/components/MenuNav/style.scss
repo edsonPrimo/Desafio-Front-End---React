@@ -1,0 +1,65 @@
+@import '../../styles/variaveis.scss';
+
+.menu {
+  width: 100%;
+  @include for-tablet {
+    display: none;
+  }
+
+  &__titulo{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: $cinza-claro;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem
+  }
+
+  .tab{
+    color: $cinza-claro;
+
+    &__link--active{
+      opacity: 1 !important;
+      color: $branco;
+      
+      .icone{
+        background: $azul;
+      }
+    }
+
+    &__link {
+      padding-top: 1rem;
+      text-decoration: none;
+      opacity: 0.40; 
+      align-items: center;
+      &:hover{
+          opacity: 0.8;
+      } 
+      &:active{
+          opacity: 1;
+      }  
+
+      
+      &__icone{
+        margin-right: 1rem;     
+        padding: 16px;
+        background: rgba(80,129,251,.16);
+        border-radius: 16px;
+        transition: 0.2s;
+        background: rgba(80, 129, 251, 0.64);
+        color: #fff;
+
+        svg{
+          width: 22px;
+        }
+        
+      }
+      &__texto {
+        color: $cinza-claro; 
+      }
+    }
+  }
+
+
+
+}

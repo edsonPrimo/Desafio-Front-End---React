@@ -1,0 +1,69 @@
+@import '../../../../styles/variaveis.scss';
+
+.project-options {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding-left: 2.5rem;
+  
+  &__titulo{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: $cinza-claro;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem
+  }
+  
+  &__input{
+    width: 100%;
+  }
+
+  &__descricao{
+    margin-top: 1rem;
+    font-family:'Inter', sans-serif;
+  }
+
+  &__personalizacao{
+    margin-top: 2.5rem;
+  }
+  
+  &__select {
+    height: 42px;
+    color: $branco64;
+    text-indent: 1;
+      &__option {
+        background-color: $azul-background;
+        // color: $preto;
+        font-size: 1rem;
+    }
+  }
+  
+  &__wrapper{
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    height: 3rem;
+    padding: 0.2rem;
+    border: 1px solid $cinza-claro;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  .input-color{
+    border: none;
+    box-sizing: border-box;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+  }
+  
+  &__btn-salvar {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+
+}

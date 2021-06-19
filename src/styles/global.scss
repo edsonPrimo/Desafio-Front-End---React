@@ -1,0 +1,37 @@
+@import url(_reset.css);
+@import './variaveis.scss';
+@import './components/input.scss';
+@import './components/botao.scss';
+
+.body {
+  background: #051D3B;
+  padding: 0 2rem;
+  height: 100vh;
+  @media screen and (min-width:1200px){
+    padding: 0 5rem;
+  }
+}
+.flex {
+  display:flex
+}
+.flex--centro {
+	align-items: center;
+	justify-content: center;
+}
+.flex--coluna {
+	flex-direction: column;
+}
+.main {
+  padding-top: 2rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25% 75%;
+  @include for-tablet {
+    grid-template-columns: 100%;
+  }
+}
+
+:root {
+  font-size: 16px;
+  font-family:'Inter', sans-serif;
+}

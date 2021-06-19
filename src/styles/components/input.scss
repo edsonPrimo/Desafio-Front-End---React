@@ -1,0 +1,22 @@
+.input {
+  font-family:'Inter', sans-serif;
+  box-sizing: border-box;
+  text-indent: 1rem;
+  transition: ease 0.35s ;
+  background: $cinza016;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: none;
+  line-height: 2.5rem;
+  color: $branco;
+}
+
+.input::placeholder {
+    color: $branco64;
+    text-indent: 1rem;
+    box-sizing: border-box;  
+}
+
+.input:hover, .input:focus {
+  background-color:$cinza024;
+}

@@ -1,0 +1,37 @@
+@import '../../styles/variaveis.scss';
+
+.header {
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  width: 100%;
+  align-items:center;
+
+  &__link{
+    width:25%;
+  }
+
+  &__search {
+    width:50%;
+  }
+
+  &__profile {
+    width: 25%;
+    
+    &__link {
+      text-decoration: none;
+      align-items: center;
+      justify-content: flex-end;
+      border-radius: 8px;
+      padding: 0.5rem;
+      color: $cinza-claro;
+        &:hover{
+            background-color:$cinza08;
+        }
+    }
+    &__foto{
+      border-radius: 50%;
+      margin-right: 0.4rem;
+    }
+ }
+
+}
